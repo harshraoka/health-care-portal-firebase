@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.dashcontainer{
+  display: flex;
+  flex-direction: column;
+ flex-wrap: wrap; 
+ margin: auto;
+ 
+  width: 70%; 
+  align-items: center;
+  justify-content: center;
+  
+ 
+}
+
+body{
+    background-color: #e3f2fd;
+    font-family: Helvetica, ariel, sans-serif;
+}
+.headerdash{
+    padding-top: 5%;
+    padding-bottom: 2%;
+    text-align: center;
+}
+
+.headerdash h1{
+    font-size: 12vw;
+}
+.carddash{
+    background: #301008;
+    width: 80%;
+    height: 400px;
+    margin: 10px;
+    border-radius: 15px;
+    height: fit-content;
+    color: white;
+    
+    
+    
+
+}
+
+
+
+.carddash p{
+    padding: 10px;
+}
+
+.carddash h4{
+    padding: 10px;
+}
+
+.carddash button{
+    background-color: #ed0b70;
+    color: black;
+    width: 50%;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: auto;
+    text-decoration: none;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+.carddash button:hover{
+    background-color: lightgreen;
+    color: black;
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: all 1s ease;
+}
+
+.carddash:hover{
+    background-color: rgb(62, 62, 62);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 1s ease;
+}
+
+.buttonsfailiure button:hover{
+    color: red;
+}

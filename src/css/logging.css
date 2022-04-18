@@ -1,0 +1,154 @@
+/* .containerlog{
+    align-items: center;
+    display: flex;
+    flex-direction: column; 
+}
+
+.cardlog{
+    width: 75%;
+    height: 90%;
+    margin-top: 10%;
+    background-color: #301008;
+    background: #301008;
+    width: 80%;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.cardlog h1{
+    color: aqua;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 4vw;
+}
+.cardlog label{
+    text-align: center;
+ 
+    font-size: 2vw;
+    display: block;
+    padding-top: 5%;
+    
+
+
+}
+
+input{
+    border-radius: 15px;
+    height: fit-content;
+    font-size: 2vw;
+    text-align: center;
+    width: fit-content;
+    
+    align-items: center;
+    background-color: white;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 5%;
+    
+
+
+    
+
+}
+
+input :placeholder-shown{
+    color: white;
+}
+
+
+.cardlog button{
+    background-color: #ed0b70;
+    color: black;
+    
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: auto;
+    text-decoration: none;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+.cardlog button:hover{
+    background-color: lightgreen;
+    color: black;
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: all 1s ease;
+}
+
+.cardlog:hover{
+    background-color: rgb(62, 62, 62);
+    color: white;
+    cursor: pointer;
+    
+    transition: all 1s ease;
+} */
+
+.containerlog{
+    background-color: #301008;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    margin-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-radius: 15%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+  
+
+}
+
+.cardlog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+label{
+    padding: 10%;
+    
+}
+input{
+    text-align: center;
+    color: black;
+    background-color: white;
+    margin-bottom: 15%;
+    width: 90%;
+}
+
+button{
+    background-color: #ed0b70;
+    width: 90%;
+    margin-top: 10%;
+    padding: 5%;
+
+}
+
+textarea{
+    text-align: center;
+    color: black;
+    background-color: white;
+    margin-bottom: 15%;
+    width: 90%;
+    
+}
+

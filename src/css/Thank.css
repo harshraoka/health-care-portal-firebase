@@ -1,0 +1,93 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fpngtree.com%2Ffree-backgrounds-photos%2Fmedical&psig=AOvVaw06u0bcyc06H5AgkaLfRZd2&ust=1648523497742000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMiqleXq5_YCFQAAAAAdAAAAABAD");
+    background: no-repeat;
+   
+    
+}
+
+
+.containerthank{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ flex-wrap: wrap;
+ justify-content: center;
+ height: 50%;
+ margin-top: 15%;
+ margin-bottom: 5%;
+ 
+ 
+ 
+ 
+
+ 
+    
+
+}
+
+.cardthank{
+    background: #301008;
+    width: 50%;
+    color:#ed0b70 ;
+    
+    border-radius: 15px;
+    padding: 10%;
+    
+   
+    
+}
+
+.cardthank h4{
+    color: white
+    ;
+}
+
+
+
+
+
+
+
+link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card p{
+    padding: 10px;
+}
+
+.cardlanding h1{
+    padding: 10px;
+}
+
+.cardlanding button{
+    background-color: #ed0b70;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+.cardlanding button:hover{
+    background-color: lightgreen;
+    /* color: black; */
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: all 1s ease;
+}
+
+.cardlanding:hover{
+    background-color: rgb(62, 62, 62);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all 1s ease;
+}
