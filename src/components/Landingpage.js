@@ -7,6 +7,7 @@ const Landingpage = () => {
         <>
         <div className='landing_container'>
         <div className='cardlanding'>
+        
         <h1>Welcome, to our health care website</h1>
            
                 
@@ -27,6 +28,7 @@ const Landingpage = () => {
                 </Link>       
                 
     </div>
+    <h4 className='alert'>Today daily covid cases : 2451</h4>
         
         </div>
             

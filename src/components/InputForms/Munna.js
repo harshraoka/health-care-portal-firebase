@@ -106,7 +106,13 @@ const Munna = () => {
       >
         Submit
       </button>
+     
     </form>
+    <div >
+           <a href='/' >
+                <button>Go Home</button>
+            </a>
+    </div>
     </div>
 
     

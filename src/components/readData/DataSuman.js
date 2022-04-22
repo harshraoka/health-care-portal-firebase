@@ -2,6 +2,7 @@
 import { db } from "../../firebase";
 import { useState } from 'react';
 import '../../css/dashboard.css';
+import { firestore } from "../../firebase1";
 
 
 function Reload() {
@@ -9,6 +10,20 @@ function Reload() {
         window.location.reload()
     });    
 }
+
+const deleteUserByName = async (name) => {
+    const snapshot = await firestore
+      .collection("suman")
+      .limit(1)
+      .where("name", "==", name)
+      .get();
+  
+    const doc = snapshot.docs[0];
+    doc.ref.delete();
+  
+    console.log(doc.id);
+    return doc.id;
+  };
 
   
 const DataSuman = () => {    
@@ -40,9 +55,19 @@ const DataSuman = () => {
         
         <div>
             {Reload}
+            <div className="home">
+            <a href='/'>
+                    <button>Go Home</button>
+                </a>
+
+            
+            </div>
             <center>
             <h2>Appointments</h2>
+            
             </center>
+            
+           
           
         {
             info.map((data) => (
@@ -63,7 +88,9 @@ const DataSuman = () => {
 const Frame = ({name , email , date, time ,message}) => {
     console.log(name + " " + email + " " +date+ " "+time+" "+ message);
     return (
-        <div className="containerdash">
+        <div>
+            
+<div className="containerdash">
             <div>
             <div className="carddash">
                   
@@ -75,10 +102,15 @@ const Frame = ({name , email , date, time ,message}) => {
 <p>time : {time}</p>
                   
 <p>Symptoms : {message}</p>
+<div>
+           <button onClick={() => deleteUserByName(name)} className="delete">Delete</button>
+           </div>
    
             </div>
         </div>
         </div>
+        </div>
+        
         
     );
 }

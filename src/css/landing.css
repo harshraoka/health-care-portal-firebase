@@ -85,3 +85,12 @@ link{
     transform: scale(1.2);
     transition: all 1s ease;
 }
+
+.alert h4{
+    margin-top: 10px;
+    color: red;
+}
+
+.alert{
+    margin-top: 20px;
+}

@@ -93,3 +93,19 @@ body{
     transform: scale(1.1);
     transition: all 1s ease;
 }
+
+.home{
+    width: fit-content;
+    height: fit-content;
+    align-items: flex-start;
+    max-width: 100px;
+    max-height: 10px;
+    position: fixed;
+    
+    
+    
+}
+
+.home button{
+    border-radius: 15px;
+}

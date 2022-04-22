@@ -2,6 +2,7 @@
 import { db } from "../../firebase";
 import { useState } from 'react';
 import '../../css/dashboard.css';
+import { firestore } from "../../firebase1";
 
 
 function Reload() {
@@ -10,6 +11,19 @@ function Reload() {
     });    
 }
 
+const deleteUserByName = async (name) => {
+    const snapshot = await firestore
+      .collection("munna")
+      .limit(1)
+      .where("name", "==", name)
+      .get();
+  
+    const doc = snapshot.docs[0];
+    doc.ref.delete();
+  
+    console.log(doc.id);
+    return doc.id;
+  };
   
 const DataMunna = () => {    
 
@@ -40,6 +54,13 @@ const DataMunna = () => {
         
         <div>
             {Reload}
+            <div className="home">
+            <a href='/'>
+                    <button>Go Home</button>
+                </a>
+
+            
+            </div>
             <center>
             <h2>Appointments</h2>
             </center>
@@ -75,6 +96,9 @@ const Frame = ({name , email , date, time ,message}) => {
 <p>time : {time}</p>
                   
 <p>Symptoms : {message}</p>
+<div>
+           <button onClick={() => deleteUserByName(name)} className="delete">Delete</button>
+           </div>
    
             </div>
         </div>

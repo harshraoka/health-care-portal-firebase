@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import doctors from "./data/Data_doctor";
+
 import '../css/Doctor.css';
-import { Link } from 'react-router-dom';
+
 
 function ScrollToTopOnMount() {
     useEffect(() => {
@@ -19,8 +19,15 @@ const reload = () =>{
 
 const Doctors = () => {
     return (
-       
-        <div className="containerdoc">
+       <div>
+           <div className='home'>
+           <a href='/'>
+                <button>Go Home</button>
+            </a>
+
+        
+        </div>
+            <div className="containerdoc">
              <div className='card'>
                         <span>
                             <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJCPwBQr4AUdY_AUeW1P1t7GxmTwGXNhggAQ&usqp=CAU' alt={"dr asthana image"} className='person-img' />
@@ -74,6 +81,8 @@ const Doctors = () => {
 
                     </div>
         </div>
+       </div>
+       
        
        
     )

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState,  } from "react";
 // import "../form.css";
 // import '../../css/form.css';
 import { db } from "../../firebase";
@@ -42,6 +42,7 @@ const Asthana = () => {
   };
 
   return (
+    <div>
     <div className="containerlog">
         <div className="cardlog"></div>
 
@@ -100,14 +101,24 @@ const Asthana = () => {
         onChange={(e) => setMessage(e.target.value)}
       ></textarea>
       <br />
+     
       <button
         type="submit"
         
       >
         Submit
       </button>
+     
     </form>
+
+    <div >
+           <a href='/' >
+                <button>Go Home</button>
+            </a>
     </div>
+    </div>
+    </div>
+    
 
     
   );
