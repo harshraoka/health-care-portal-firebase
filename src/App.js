@@ -6,7 +6,7 @@ import { Route } from 'react-router-dom'
 
 import Landingpage from './components/Landingpage'
 import Doctors from './components/Doctor'
-
+import CovidData from './components/Covid'
 
 import DoctorChoice from './components/DoctorChoice'
 
@@ -43,6 +43,7 @@ const App = () => {
         <Route path="/dataMunna" exact component={DataMunna}/>
         <Route path="/dataCircuit" exact component={DataCircuit}/>
         <Route path="/dataSuman" exact component={DataSuman}/>
+        <Route path="/CovidData" exact component={CovidData}/>
 
   
       

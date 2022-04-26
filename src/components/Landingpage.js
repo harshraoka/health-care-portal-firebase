@@ -2,9 +2,12 @@
 import '../css/landing.css';
 import { Link } from 'react-router-dom';
 
+
+
 const Landingpage = () => {
     return (
         <>
+        
         <div className='landing_container'>
         <div className='cardlanding'>
         
@@ -16,7 +19,7 @@ const Landingpage = () => {
                     
                     <button >Are you a doctor</button>
                 </Link>
-              
+               
                
                 
             
@@ -25,10 +28,13 @@ const Landingpage = () => {
                 
                 <Link to="/DoctorChoice">
                     <button>Are you a patient</button>
-                </Link>       
+                </Link>      
+                <Link to="/CovidData">
+                    <button>View Covid cases</button>
+                </Link>    
                 
     </div>
-    <h4 className='alert'>Today daily covid cases : 2451</h4>
+    
         
         </div>
             
